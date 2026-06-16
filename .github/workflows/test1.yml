@@ -6,9 +6,9 @@ name: CI #--tells the information about the pipeline -- terraform pipeline
 on: # startiog point which decides when this workflow will run
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "feature"] # whenever anything code commits to main/featutr/master branch
+    branches: [ "main"] # whenever anything code commits to main/featutr/master branch
   pull_request:
-    branches: [ "feature" ] # When we raise a pull request to main branch/feature branch ; if ebveryone working on same feature branch
+    branches: [ "main" ] # When we raise a pull request to main branch/feature branch ; if ebveryone working on same feature branch
                                   #fearure/HCL_intfa storyline
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -33,4 +33,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project. TEST 1
+          echo test, and deploy your project. TEST 1 final
